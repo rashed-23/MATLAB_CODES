@@ -2,7 +2,7 @@ clc
 clear all
 format long
 syms x
-f=@(x)sind(x^3-7*x^2+6*x+8);
+f=@(x)sin(x^3-7*x^2+6*x+8);
 Exect_res=subs(diff(f(x)),x,(1-sqrt(5))/2);%subs(f(x),x,1);
 double(Exect_res)
 h=0.1;
